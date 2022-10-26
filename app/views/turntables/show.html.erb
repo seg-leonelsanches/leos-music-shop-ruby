@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @turntable %>
+
+<div>
+  <%= link_to "Edit this turntable", edit_turntable_path(@turntable) %> |
+  <%= link_to "Back to turntables", turntables_path %>
+
+  <%= button_to "Destroy this turntable", @turntable, method: :delete %>
+</div>

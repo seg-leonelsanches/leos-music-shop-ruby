@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Turntables</h1>
+
+<div id="turntables">
+  <% @turntables.each do |turntable| %>
+    <%= render turntable %>
+    <p>
+      <%= link_to "Show this turntable", turntable %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New turntable", new_turntable_path %>

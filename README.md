@@ -1,24 +1,21 @@
-# README
+# Leo's Music Shop in Ruby (on Rails)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is another very cool application for Leo's Music Shop, dedicated to DJ equipment. 
 
-Things you may want to cover:
+## Getting Started
 
-* Ruby version
+You'll need to use Ruby 3 to run this application. Make sure you have the `gem` command installed.
 
-* System dependencies
+To install all the packages for this solution, use the command:
 
-* Configuration
+```sh
+bundle
+```
 
-* Database creation
+## Running
 
-* Database initialization
+```sh
+bin/rails server
+```
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+This will run the application at `http://localhost:3000`. 
