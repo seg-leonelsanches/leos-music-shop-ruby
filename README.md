@@ -12,6 +12,12 @@ To install all the packages for this solution, use the command:
 bundle
 ```
 
+This application requires a `SEGMENT_WRITE_KEY` environment variable set with your source Write Key. If running locally, this can be set through a `.env` in the root with the following content:
+
+```ini
+SEGMENT_WRITE_KEY='your-write-key'
+```
+
 ## Running
 
 ```sh
