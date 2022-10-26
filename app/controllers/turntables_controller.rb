@@ -3,15 +3,19 @@ class TurntablesController < ApplicationController
 
   # GET /turntables or /turntables.json
   def index
-    Analytics.identify(
-      user_id: '019mr8mf4r',
-      traits: { email: "#{ 'valued.dj@segment.com' }", friends: 872 },
-      context: {ip: '8.8.8.8'})
+    Analytics.page(
+      anonymous_id: session.id,
+      category: 'Retail Pages',
+      name: 'All Turntables')
     @turntables = Turntable.all
   end
 
   # GET /turntables/1 or /turntables/1.json
   def show
+    Analytics.page(
+      anonymous_id: session.id,
+      category: 'Retail Pages',
+      name: 'Turntable Details')
   end
 
   # GET /turntables/new
