@@ -70,3 +70,6 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+# Segment
+gem 'analytics-ruby', '~> 2.4.0', :require => 'segment/analytics'

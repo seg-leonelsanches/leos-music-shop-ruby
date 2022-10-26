@@ -3,6 +3,10 @@ class TurntablesController < ApplicationController
 
   # GET /turntables or /turntables.json
   def index
+    Analytics.identify(
+      user_id: '019mr8mf4r',
+      traits: { email: "#{ 'valued.dj@segment.com' }", friends: 872 },
+      context: {ip: '8.8.8.8'})
     @turntables = Turntable.all
   end
 
